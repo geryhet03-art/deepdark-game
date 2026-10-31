@@ -664,7 +664,7 @@ document.querySelectorAll('nav button').forEach(function(x){x.classList.remove('
 $('s-'+b.dataset.s).classList.add('on');b.classList.add('on');document.body.classList.toggle('home',b.dataset.s=='home');if(b.dataset.s=='top'||b.dataset.s=='profile')loadTop();if(b.dataset.s=='profile'){drawProfile();loadMe()}if(b.dataset.s=='events')drawEvents()});
 setInterval(save,3000);document.addEventListener('visibilitychange',function(){if(document.hidden)save()});
 
-var API='https://YOUR-PROJECT.vercel.app/api'; // <-- адреса вашого сервера на Vercel (див. README)
+var API='https://deepdark-server.vercel.app/api'; // адреса сервера на Vercel
 var APP_VER=39,CV=null,tapLog=[];
 function showUpd(){$('upd').style.display='flex'}
 $('updb').onclick=function(){if(tg&&tg.close)tg.close();else location.reload()};
